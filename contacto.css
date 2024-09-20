@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.menu-icon {
+    cursor: pointer;
+    padding: 10px;
+    position: relative; /* Agrega esta línea */
+    z-index: 2; /* Agrega esta línea */
+}
+  
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+    position: relative; /* Agrega esta línea */
+    z-index: 1; /* Agrega esta línea */
+}
+  
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: 0.4s;
+    overflow-y: auto;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+}
+  
+li {
+    padding: 10px;
+    text-align: center;
+}
+  
+a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+.content {
+    margin-right: 0;
+    padding: 20px;
+    transition: 0.4s;
+}
+  
+.active {
+    right: 0;
+}
+  
+.menu-opened .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+  
+.menu-opened .bar:nth-child(2) {
+    opacity: 0;
+}
+  
+.menu-opened .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+  
+
+.logo {
+    flex-grow: 1; /* Hace que el logo ocupe el espacio restante en el header */
+  }
+  
+.logo img {
+    max-width: 100px; /* Ajusta el ancho máximo de tu logo según sea necesario */
+    display: block; /* Alinea el logo al centro */
+    margin: 0 auto; /* Centra el logo horizontalmente */
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info, .contact-form {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #007acc;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005c99;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Tamaño máximo del logo en el footer */
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #007acc; /* Cambia el color al pasar el mouse sobre los íconos de redes sociales */
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguidores Altoke</title>
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/logo-removebg-preview.png" alt="Logo de IG"></a>
+        </div>
+      </header>
+      <nav class="sidebar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="enviar.html">Ganar Seguidores</a></li>
+            <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+      </nav>
+    <div class="login-container">
+        <div class="login-form">
+            <p>Esta seccion es solamente para el Administrador de la pagina.</p>
+            <h2>Iniciar Sesión</h2>
+            <form action="procesar_login.php" method="post">
+                <input type="text" name="usuario" placeholder="Nombre de Usuario" required>
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imagenes/logo-removebg-preview.png" alt="Logo de IG">
+            </div>
+            <div class="footer-info">
+                <p>Seguidores Altoke</p>
+                <p>Dirección: Las Toscas, Santa Fe, Argentina</p>
+                <p>Correo Electrónico: seguidoresaltokeoficial@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p style="display: flex; justify-content: center;">Hecho con ❤ por un chabon de Las Toscas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
